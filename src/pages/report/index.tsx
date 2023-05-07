@@ -49,7 +49,7 @@ const Report: React.FC = () => {
       </Row>
       {
         openedModal && (
-          <Modal title={data.news.geral_news[actualNews].title} sentiment={data.news.sentiments[actualNews]} summary={data.news.summaries[actualNews]} url={data.news.geral_news[actualNews].url} close={() => setOpenedModal(false)}></Modal>
+          <Modal title={data.news.geral_news[actualNews].title} sentiment={data.news.sentiments[actualNews]} summary={data.news.summaries[actualNews]} wordclouds={data.wordclouds[actualNews]} url={data.news.geral_news[actualNews].url} close={() => setOpenedModal(false)}></Modal>
         )
       }
       <Row>

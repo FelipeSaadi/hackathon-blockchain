@@ -10,6 +10,7 @@ type Props = {
   close: VoidFunction;
   summary: string;
   url: string;
+  wordclouds: any;
 }
 
 const Modal: React.FC<Props> = (props: Props) => {
@@ -18,7 +19,7 @@ const Modal: React.FC<Props> = (props: Props) => {
       <div className="modal-container">
         <Row className='row'>
           <Col>
-            <h2 className='news-title'>Ethereum Price Prediction as $8 Billion Trading Vol...</h2>
+            <h2 className='news-title'>{props.title}</h2>
           </Col>
         </Row>
         <Row>
@@ -40,7 +41,8 @@ const Modal: React.FC<Props> = (props: Props) => {
             </Row>
           </Col>
           <Col xs={12} md={6}>
-            <img className='wordcloud' src="https://media.nngroup.com/media/editor/2012/11/18/wordle-word-cloud-applications.png" alt="" />
+            
+            <img className='wordcloud' src={`data:image/jpeg;base64,${props.wordclouds}`} />
           </Col>
         </Row>
         <div className="close" onClick={() => props.close()}>

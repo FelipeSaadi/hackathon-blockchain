@@ -17,7 +17,6 @@ const Home: React.FC = () => {
   const options = [
     { value: 'bitcoin', label: 'Bitcoin' },
     { value: 'ethereum', label: 'Ethereum' },
-    { value: 'litecoin', label: 'Litecoin' }
   ]
 
   useEffect(() => {

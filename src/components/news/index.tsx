@@ -16,7 +16,7 @@ const News: React.FC<Props> = (props: Props) => {
         <Col xs={8} md={6} > */}
           <Row className='row'>
             <Col>
-              <h2 className='news-title'>Ethereum Price Prediction as $8 Billion Trading Vol...</h2>
+              <h2 className='news-title'>{props.title}</h2>
             </Col>
           </Row>
           <Row>
