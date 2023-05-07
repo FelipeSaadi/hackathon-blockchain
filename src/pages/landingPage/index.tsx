@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import "./styles.scss"
 import { Row, Col } from 'react-styled-flexboxgrid'
 
-import Web3 from 'web3'
-
 const LandingPage: React.FC = () => {
 
   
