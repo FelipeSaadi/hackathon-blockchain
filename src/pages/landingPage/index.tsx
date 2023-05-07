@@ -1,30 +1,21 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./styles.scss"
 import { Row, Col } from 'react-styled-flexboxgrid'
 
 const LandingPage: React.FC = () => {
-
-  
   // const navigate = useNavigate()
 
-  const connect = async () => {
-    // Connect to wallet with await
-    if (window.ethereum) {
-      // Solicita autorização para acessar a conta do usuário
-      window.ethereum.request({ method: 'eth_requestAccounts' })
-        .then()
-        .catch(console.error);
-    } else {
-      console.error('instalar extensão metamask!!');
-    }
-  }
+  // const connect = async () => {
+  //   // Connect to wallet with await
+  //   return 'connected'
+  // }
 
   // const subscribe = async () => {
   //   return 'subscribed'
   // }
 
   const handle: any = async () => {
-    connect()
+    // call wallet function with await
 
     // call purchase subscription function with await
     return 'task finished'
@@ -37,7 +28,7 @@ const LandingPage: React.FC = () => {
       </Row>
       
       <Row middle='md' center='md'>
-        <button className='button' onClick={(() => handle())}>Start</button>
+        <button className='button' onClick={(() => handle)}>Start</button>
       </Row>
 
       <Row center='md' middle='md' >
