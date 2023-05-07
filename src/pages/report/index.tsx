@@ -34,9 +34,9 @@ const Report: React.FC = () => {
           </div>
           <div className='navigation'>
             {
-              data && data.news && data.news.geral_news.map(( index: number) => {
+              data && data.news && data.news.geral_news.map((news: any, index: number) => {
                 return (
-                  <div className={`${actualNews === index && 'active'}`} onClick={() => setActualNews(index)} key={index}></div>
+                  <div className={`${actualNews === index && 'active'}`} onClick={() => setActualNews(index)} key={`${news}-${index}`}></div>
                 )
               })
             }
