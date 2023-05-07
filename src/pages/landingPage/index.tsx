@@ -4,16 +4,16 @@ import { Row, Col } from 'react-styled-flexboxgrid'
 import { useNavigate } from 'react-router-dom'
 
 const LandingPage: React.FC = () => {
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
-  const connect = async () => {
-    // Connect to wallet with await
-    return 'connected'
-  }
+  // const connect = async () => {
+  //   // Connect to wallet with await
+  //   return 'connected'
+  // }
 
-  const subscribe = async () => {
-    return 'subscribed'
-  }
+  // const subscribe = async () => {
+  //   return 'subscribed'
+  // }
 
   const handle: any = async () => {
     // call wallet function with await

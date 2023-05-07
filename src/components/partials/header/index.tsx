@@ -3,7 +3,6 @@ import Logo from '/Logo.png'
 
 import { Col, Row } from 'react-styled-flexboxgrid'
 import "./styles.scss"
-import { Link, useLocation } from 'react-router-dom'
 
 const Header: React.FC = () => {
   const [showLogin, setShowLogin] = useState(false)

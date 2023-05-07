@@ -13,7 +13,7 @@ const Service = {
       return error
     }
   },
-  getFake: (crypto: string) => {
+  getFake: () => {
     const data = {
       "output": {
         "bow": [
