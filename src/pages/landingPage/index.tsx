@@ -1,7 +1,6 @@
 import React from 'react'
 import "./styles.scss"
 import { Row, Col } from 'react-styled-flexboxgrid'
-import { useNavigate } from 'react-router-dom'
 
 const LandingPage: React.FC = () => {
   // const navigate = useNavigate()
